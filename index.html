@@ -4,29 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compasso Musical - Loja de Instrumentos Musicais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva,
+            Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        h1, h2,h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+        
+        .cabecalhoPrincipal {
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nomeLogo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        .ListaNavegacao {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .linkNav {
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .linkNav:hover {
+            color: #d32f2f;
+        }
+    </style>
 </head>
-<body> 
+
 <!-- Cabeçalho do Site -->
-<header id="header">
+<header id="header" class="cabecalhoPrincipal">
     <div id="Logo">
-        <h1>Compasso Musical</h1>
+        <h1 class="nomeLogo">Compasso Musical</h1>
     </div>
     <nav id="nav">
-        <ul>
+        <ul class="ListaNavegacao">
             <li>
-                <a href="#">Início</a>
+                <a href="#hero" class="linkNav">Início</a>
             </li>
             <li>
-                <a href="#">Sobre</a>
+                <a href="#sobre" class="linkNav">Sobre</a>
             </li>
             <li>
-                <a href="#">Produtos</a>
+                <a href="#produtos" class="linkNav">Produtos</a>
             </li>
             <li>
-                <a href="#">Depoimentos</a>
+                <a href="#depoimentos" class="linkNav">Depoimentos</a>
             </li>
             <li>
-                <a href="#">Contato</a>
+                <a href="#contato" class="linkNav">Contato</a>
             </li>
         </ul>
     </nav>
@@ -41,7 +101,7 @@
         Encontre as melhores marcas de bateria, guitarras, saxofones e 
         teclados com condições imperdiveis
     </p>
-    <img 
+    <img
     src="https://images.unsplash.com/photo-1521547418549-6a31aad7c177" alt="Banda musical que está tocando 
     com os instrumentos da Compasso Musical"
     width="600"
