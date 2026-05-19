@@ -63,6 +63,21 @@
         .linkNav:hover {
             color: #d32f2f;
         }
+
+        .botaoPrincipal {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .botaoPrincipal:hover {
+            background-color: #b71c1c;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -95,9 +110,10 @@
 <!-- Conteúdo Principal -->
 <main>
     <!--Seção hero-->
-    <section id="hero">
-    <h2>O Som da Sua Vida Começa Aqui!</h2>
-    <p>
+    <section id="hero" class="secaoHero" style="background-color: #eceff1; text-align: center; 
+    padding: 5rem 2rem; border-bottom: 4px solid #d32f2f;">
+    <h2 style="font-size: 3rem; color: #1a1a1a;">O Som da Sua Vida Começa Aqui!</h2>
+    <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
         Encontre as melhores marcas de bateria, guitarras, saxofones e 
         teclados com condições imperdiveis
     </p>
@@ -105,8 +121,11 @@
     src="https://images.unsplash.com/photo-1521547418549-6a31aad7c177" alt="Banda musical que está tocando 
     com os instrumentos da Compasso Musical"
     width="600"
-    >
+    style="border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">
+    <br><br>
+    <a href="#" class="botaoPrincipal" style="font-size: 1.2rem; padding: 1rem 2rem;">Ver Nossas Ofertas</a>
     </section>
+    
 
     <!--Seção sobre-->
     <section id="sobre">
